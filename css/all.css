@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.banner{
+    background: #424242;
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: #FFD366;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.form input{
+    border: 2px solid #FFD366;
+    background: rgba(255,255,255,0.18);
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 23px;
+    color: #fff;
+    font-size: 24px;
+}
+.form input::placeholder{
+    font-size: 24px;
+    color: rgba(255,255,255,0.50);
+    padding-left: 8px;
+}
+.result{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px #FFD366 solid;
+    background: #FFD366;
+    font-size: 24px;
+    color: #424242;
+}
+.result:hover{
+    cursor: pointer;
+    background: #FFD366;
+    box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+}
+.lastResult{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.resultCircle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid;
+    position: relative;
+}
+.resultCircle p{
+    font-family:SFNSDisplay;
+    font-size: 32px;
+    padding-top: 30px;
+    text-align: center;
+}
+.resultCircle small{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+.resultCircle .reset{
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    width: 25px;
+    height: 25px;   
+    padding: 5px;
+}
+.resultCircle .reset:hover{
+    cursor: pointer;
+    transform: rotate(-180deg);
+    transition: 1s;
+}
+.result_text p{
+    font-family: SFNSDisplay;
+    font-size: 32px;
+    margin-left: 18px;
+}
+.content{
+    background: #e5e5e5;
+    padding-bottom: 74px;
+}
+.content h2{
+    text-align: center;
+    font-size: 24px;
+    color: #424242;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 48px;
+    padding-bottom: 36px;
+}
+.BMI_list li{
+    display: flex;
+    justify-content: space-between;
+    border-left: 6px solid;
+    margin: 0 auto;
+    height: 62px;
+    width: 624px;
+    background-color: #fff;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-right: 11px;
+}
+.BMI_list h3{
+    padding-left: 12px;
+    font-size: 20px;
+    color: #4A4A4A;
+}
+.BMI_list small{
+    font-size: 12px;
+    color: #424242;
+    padding-right: 7px;
+}
+.BMI_list span{
+    font-size: 20px;
+    color: #4A4A4A;
+}
+.fa-ban{
+    cursor: pointer;
+}
+.fa-ban:hover{
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.footer{
+    background: #FFD366;
+    text-align: center;
+    padding: 18px;
+}
