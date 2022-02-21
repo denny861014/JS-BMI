@@ -98,7 +98,7 @@ function circle(){
     result.style.display = "none";
     lastResult.style.display = "flex";
     for(let i=0; i<data.length; i++){
-        str = '<div class="resultCircle" style="color: ' + data[i].color + ';"><p>' + data[i].BMI + '<br><small>BMI</small></p><img src="/img/icons_loop.png" class="reset" style="background-color: ' + data[i].color + ';" alt=""></div><div class="result_text"><p style="color:  ' + data[i].color + ';">' + data[i].state + '</p></div>';
+        str = '<div class="resultCircle" style="color: ' + data[i].color + ';"><p>' + data[i].BMI + '<br><small>BMI</small></p><img src="./img/icons_loop.png" class="reset" style="background-color: ' + data[i].color + ';" alt=""></div><div class="result_text"><p style="color:  ' + data[i].color + ';">' + data[i].state + '</p></div>';
     }
     lastResult.innerHTML = str;
 }
